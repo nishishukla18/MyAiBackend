@@ -10,7 +10,7 @@ const app = express();
 await connectCloudinary();
 
 app.use(cors({
-  origin: 'https://my-ai-frontend-nine.vercel.app/',
+  origin: 'https://my-ai-frontend-nine.vercel.app',
   credentials: true
 }));
 app.use(express.json());
