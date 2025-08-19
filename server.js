@@ -9,10 +9,7 @@ import userRouter from './routes/userRoutes.js';
 const app = express();
 await connectCloudinary();
 
-app.use(cors({
-  origin: 'https://my-ai-frontend-nine.vercel.app',
-  credentials: true
-}));
+app.use(cors());
 app.use(express.json());
 app.use(clerkMiddleware());
 
